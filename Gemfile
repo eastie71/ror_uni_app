@@ -30,7 +30,9 @@ gem 'materialize-sass', '~> 1.0.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+# Get Table form of "Record.all" in rails console
+gem 'hirb'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
