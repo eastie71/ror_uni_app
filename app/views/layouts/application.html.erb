@@ -10,66 +10,12 @@
   </head>
 
   <body>
-    <header>
-      <!-- Dropdown Menu Structure -->
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">Edit</a></li>
-        <li><a href="#!">Permissions</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">Payment</a></li>
-      </ul>
-      <ul id="dropdown2" class="dropdown-content">
-        <li><a href="#!">Edit</a></li>
-        <li><a href="#!">Permissions</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">Payment</a></li>
-      </ul>
-      <nav>
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="#" class="brand-logo">My University<i class="material-icons right">school</i></a>
-            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Enrol</a></li>
-              <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <ul class="sidenav" id="mobile-menu">
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Enrol</a></li>
-        <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Account<i class="material-icons right">arrow_drop_down</i></a></li>
-      </ul>
-    </header>
+    <%= render 'layouts/navigation' %>
     <main>
       <div class="container">
         <%= yield %>
       </div>
     </main>
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">My University</h5>
-            <p class="grey-text text-lighten-4">Your future is here and now!</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Information</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#">Get Help</a></li>
-              <li><a class="grey-text text-lighten-3" href="#">About</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © 2019 My University
-        <a class="grey-text text-lighten-4 right" href="#">Contact Us</a>
-        </div>
-      </div>
-    </footer>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

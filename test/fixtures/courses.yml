@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: {
+  code: "CS101", 
+  name: "Introduction to Computer Science", 
+  description: "A detailed introduction to the topics of Computer Science. Covering all areas of Software Development Life Cycle"
+}
+
+two: {
+  code: "CS155",
+  name: "Object Oriented Programming",
+  description: "This course is designed to teach the fundementals of OOP. It starts with using the Java programming"
+}
+
