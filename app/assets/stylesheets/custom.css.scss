@@ -1,6 +1,6 @@
 @import "materialize/components/color-variables";
 $primary-color: color("blue", "lighten-2") !default;
-$secondary-color: color("yellow", "base") !default;
+$secondary-color: color("orange", "darken-1") !default;
 @import "materialize";
 
 // Icons
@@ -14,4 +14,14 @@ body {
 
 main {
 	flex: 1 0 auto;
+}
+
+.student-card {
+	height: 175px;
+	.card-action {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
 }
