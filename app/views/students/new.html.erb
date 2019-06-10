@@ -1,0 +1,35 @@
+
+<div class="row new-student">
+	<div class="col s12 m12 l10">
+		<div class="card-panel">
+			<div class="row">
+				<%= form_for(@student) do |f| %>
+					<h4 class="card-title new-student-heading">Student Registration</h4>
+					<div class="row">
+						<div class="input-field col s12">
+							<%= f.text_field :name, placeholder: "Enter your Full Name", autofocus: true %>
+							<%= f.label :name %>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<%= f.email_field :email, placeholder: "Enter your Student Email Address" %>
+							<%= f.label :email %>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<%= f.password_field :password, placeholder: "Password" %>
+							<%= f.label "Password" %>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<%= f.submit "Register", class: "btn waves-effect waves-light" %>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
