@@ -1,3 +1,17 @@
+<% if @student.errors.any? %>
+	<div class="row">
+		<div class="col s12 m12 l10">
+			<div class="card-panel orange error-list">
+				<h5 class="card-title"><%= pluralize(@student.errors.count, "error") %> occurred when trying to register:</h5>
+				<ul>
+					<% @student.errors.full_messages.each do |msg| %>
+						<li><%= msg %></li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+	</div>
+<% end %>
 
 <div class="row new-student">
 	<div class="col s12 m12 l10">

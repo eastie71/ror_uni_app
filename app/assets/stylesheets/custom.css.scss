@@ -33,3 +33,7 @@ main {
 .new-student-heading {
 	margin: 0 0 1.5rem 0;
 }
+
+.error-list ul:not(.browser-default) li {
+   	list-style: disc inside;
+}
