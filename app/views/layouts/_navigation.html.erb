@@ -30,4 +30,23 @@
     <li><a href="#">Enrol</a></li>
     <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Account<i class="material-icons right">arrow_drop_down</i></a></li>
   </ul>
+
+  <!-- Flash messages display here -->
+  <% if flash.any? %>
+    <div class="container">
+      <% flash.each do |name, msg| %>
+        <div class="row fade-out-target">
+          <div class="col s12 m12 l12">
+            <% if name == "success" %>
+              <div class="card-panel green lighten-3">
+            <% else %>
+              <div class="card-panel red lighten-3">
+            <% end %>
+                <%= msg %>
+              </div>
+          </div>
+        </div>
+      <% end %>
+  </div>
+  <% end %>
 </header>

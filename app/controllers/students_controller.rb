@@ -6,7 +6,7 @@ class StudentsController < ApplicationController
 	def create
 		@student = Student.new(student_params)
 		if @student.save
-			flash[:success] = "Welcome to My University #{@student.name}"
+			flash[:success] = "Welcome to My University, #{@student.name}"
 			redirect_to root_path
 		else
 			render 'new'
