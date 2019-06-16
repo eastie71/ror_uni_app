@@ -14,7 +14,8 @@ class StudentsController < ApplicationController
 	end
 
 	def index
-		@students = Student.all
+		@students = Student.paginate(:page => params[:page], :per_page => 6)
+		@custom_paginate_renderer = custom_paginate_renderer
 	end
 
 	def update

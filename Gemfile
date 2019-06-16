@@ -31,6 +31,8 @@ gem 'materialize-sass', '~> 1.0.0'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+# Pagination
+gem 'will_paginate', '3.1.7'
 # Get Table form of "Record.all" in rails console
 gem 'hirb'
 

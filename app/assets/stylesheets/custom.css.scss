@@ -16,6 +16,18 @@ main {
 	flex: 1 0 auto;
 }
 
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+.add-margin-bottom {
+	margin-bottom: 20px;
+}
+
+.pagination li i {
+	font-size: 1.2rem;
+}
+
 .student-card {
 	height: 175px;
 	.card-action {
