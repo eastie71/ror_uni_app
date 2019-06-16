@@ -1,7 +1,12 @@
-<div class="row">
+<div class="row no-margin-bottom">
 	<div class="col s12">
 		<h3 class="left-align">Course Listing</h3>
 	</div>
+</div>
+<div class="container">
+  <div class="center">
+    <%= will_paginate @courses, renderer: @custom_paginate_renderer %>
+  </div>
 </div>
 <div class="row">
     <% @courses.each do |course| %>
@@ -18,4 +23,9 @@
         </div>
       </div>
     <% end %>
+</div>
+<div class="container">
+  <div class="center add-margin-bottom">
+    <%= will_paginate @courses, renderer: @custom_paginate_renderer %>
+  </div>
 </div>
