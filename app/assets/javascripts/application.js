@@ -19,9 +19,10 @@
 
 $(document).on('turbolinks:load', function() {
 	// Enable sidebar navigation for mobile
-	$('.sidenav').sidenav();
-	// Dropdown menu enabled
-	$(".dropdown-trigger").dropdown();
+	Waves.displayEffect();
+	$(".sidenav").sidenav();
 	// Fade out messages
 	$(".fade-out-target").fadeOut(5000);
+	// Dropdown menu enabled
+	$(".dropdown-trigger").dropdown();
 });
