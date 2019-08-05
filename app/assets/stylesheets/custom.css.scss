@@ -38,14 +38,22 @@ main {
 	}
 }
 
-.new-student {
+.new-entity {
 	margin-top: 1.5rem;
 }
 
-.new-student-heading {
+.new-entity-heading {
 	margin: 0 0 1.5rem 0;
 }
 
 .error-list ul:not(.browser-default) li {
    	list-style: disc inside;
+}
+
+.course-link {
+	color: #ffffff;
+}
+
+.dropdown-head-wide {
+	width: 150px;
 }

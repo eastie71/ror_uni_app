@@ -1,1 +1,51 @@
-<h1>Create a NEW Course</h1>
+<% if @course.errors.any? %>
+	<div class="row">
+		<div class="col s12 m12 l10">
+			<div class="card-panel orange error-list">
+				<h5 class="card-title"><%= pluralize(@course.errors.count, "error") %> occurred while trying to create:</h5>
+				<ul>
+					<% @course.errors.full_messages.each do |msg| %>
+						<li><%= msg %></li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+	</div>
+<% end %>
+
+<div class="row new-entity">
+	<div class="col s12 m12 l10">
+		<div class="card-panel">
+			<div class="row">
+				<%= form_for(@course) do |f| %>
+					<h4 class="card-title new-entity-heading">Create New Course</h4>
+					<div class="row">
+						<div class="input-field col s12">
+							<%= f.text_field :code, placeholder: "Enter Course Code", autofocus: true %>
+							<%= f.label :code %>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<%= f.text_field :name, placeholder: "Enter Course Name" %>
+							<%= f.label :name %>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<%= f.text_area :description, rows: 12, class: "materialize-textarea", placeholder: "Enter Full Course Description" %>
+							<%= f.label :description, "Full Description" %>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<%= f.button class: "btn waves-effect waves-light", type: :submit do %>
+								Create
+							<% end %>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
