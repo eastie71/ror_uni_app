@@ -15,12 +15,22 @@
   <ul id="dropdown-course1" class="dropdown-content">
     <li><%= link_to "Create Course", new_course_path %></li>
     <li class="divider"></li>
-    <li><%= link_to "Listing", root_path %></li>
+    <li><%= link_to "Course Listing", root_path %></li>
   </ul>
   <ul id="dropdown-course2" class="dropdown-content">
     <li><%= link_to "Create Course", new_course_path %></li>
     <li class="divider"></li>
-    <li><%= link_to "Listing", root_path %></li>
+    <li><%= link_to "Course Listing", root_path %></li>
+  </ul>
+  <ul id="dropdown-student1" class="dropdown-content">
+    <li><%= link_to "Student Register", new_student_path %></li>
+    <li class="divider"></li>
+    <li><%= link_to "Student Listing", students_path %></li>
+  </ul>
+  <ul id="dropdown-student2" class="dropdown-content">
+    <li><%= link_to "Student Register", new_student_path %></li>
+    <li class="divider"></li>
+    <li><%= link_to "Student Listing", students_path %></li>
   </ul>
   <nav>
     <div class="container">
@@ -28,16 +38,18 @@
         <%= link_to "My University<i class=\"material-icons right\">school</i>".html_safe, root_path, class: "brand-logo" %>
         <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
+          <li><a class="menu-wide" href="#">Enrol</a></li>
+          <li><a class="dropdown-trigger dropdown-head-wide" href="#" data-target="dropdown-student1">Students<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a class="dropdown-trigger dropdown-head-wide" href="#" data-target="dropdown-course1">Courses<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="#">Enrol</a></li>
           <li><a class="dropdown-trigger dropdown-head-wide" href="#" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
       </div>
     </div>
   </nav>
   <ul class="sidenav" id="mobile-menu">
-    <li><a class="dropdown-trigger" href="#" data-target="dropdown-course2">Courses<i class="material-icons right">arrow_drop_down</i></a></li>
     <li><a href="#">Enrol</a></li>
+    <li><a class="dropdown-trigger" href="#" data-target="dropdown-student2">Students<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger" href="#" data-target="dropdown-course2">Courses<i class="material-icons right">arrow_drop_down</i></a></li>
     <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Account<i class="material-icons right">arrow_drop_down</i></a></li>
   </ul>
 
