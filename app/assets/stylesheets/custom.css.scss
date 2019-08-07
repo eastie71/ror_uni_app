@@ -61,3 +61,24 @@ main {
 .menu-wide {
 	width: 110px;
 }
+
+@media only screen and (max-width: 600px) {
+	.brand-logo {
+		font-size: 1.2rem !important;
+	}
+}
+
+.sidenav-heading {
+	font-weight: 500;
+	font-size: 1.2rem;
+	padding: 0 32px;
+}
+
+.sidenav-first {
+	padding-top: 40px;
+}
+
+.sidenav li > a {
+	font-size: 1.2rem;
+	font-weight: 200;
+}
