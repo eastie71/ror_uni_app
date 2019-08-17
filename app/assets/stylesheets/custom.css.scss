@@ -46,6 +46,28 @@ main {
 	margin: 0 0 1.5rem 0;
 }
 
+.view-heading {
+	margin: 0 0 1.5rem 0;
+	font-size: 1.75rem !important;
+	font-weight: 600 !important;
+}
+
+.view-label {
+	font-size: 1.4rem;
+}
+
+.code-bold {
+	font-weight: 600;
+}
+
+.sml-pad-top {
+	padding-top: 8px !important;
+}
+
+.med-pad-top {
+	padding-top: 15px !important;
+}
+
 .error-list ul:not(.browser-default) li {
    	list-style: disc inside;
 }
