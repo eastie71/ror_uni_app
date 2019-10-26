@@ -25,4 +25,6 @@ $(document).on('turbolinks:load', function() {
 	$(".fade-out-target").fadeOut(5000);
 	// Dropdown menu enabled
 	$(".dropdown-trigger").dropdown();
+	// Auto Resize the Text Area on Course Edit Screen
+	M.textareaAutoResize($('#course-textarea'));
 });
